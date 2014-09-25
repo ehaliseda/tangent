@@ -1,0 +1,9 @@
+.slide-panel{
+	background-color: white;
+	width: 300px;
+	height: auto;
+	right: -300px;
+	top: 0px;
+	z-index: 3;
+	position: absolute;
+}

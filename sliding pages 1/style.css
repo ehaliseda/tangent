@@ -1,0 +1,8 @@
+.panel{
+	background-color: whitesmoke;
+	width: 300px;
+	height: 700px;
+	right: -300px;
+	top: 0px;
+	position: absolute;
+}
