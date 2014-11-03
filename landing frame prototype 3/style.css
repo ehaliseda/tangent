@@ -1,0 +1,63 @@
+.svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin: none;
+	padding: none;
+	/*padding-bottom: 100%;*/
+	vertical-align: middle;
+	overflow: hidden;
+	height: 613px;
+}
+
+.svg-content {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.bg-color{
+	/*background-color: #1DC0D9;*/
+background: #ffcf59; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #ffcf59 0%, #ffc22b 70%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffcf59), color-stop(70%,#ffc22b)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, #ffcf59 0%,#ffc22b 70%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, #ffcf59 0%,#ffc22b 70%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, #ffcf59 0%,#ffc22b 70%); /* IE10+ */
+background: radial-gradient(ellipse at center, #ffcf59 0%,#ffc22b 70%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf59', endColorstr='#ffc22b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#mountains{
+	/*position: absolute;*/
+	display: none;
+}
+
+/*.logo-wrap{
+	position: absolute;
+	text-align: center;
+	top: 30%;
+	left: 36%;
+}*/
+
+#logomark{
+	height: 300px;
+	position: absolute;
+	text-align: center;
+	top: 22%;
+	left: 40%;
+	opacity: 0;
+}
+
+#logotype{
+	height:230px;
+	position: absolute;
+	text-align: center;
+	top: 37%;
+	left: 48%;
+}
+
+#dots{
+	display: none;
+}

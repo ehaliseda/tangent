@@ -35,7 +35,7 @@
 		L1104.754,195.881z M902.107,630.121L778.752,517.974l336.438,78.505L902.107,630.121z"/>
 </g>
 
-<g id="pattern">
+<g id="pattern" style="opacity:0.05">
 	<path fill="#fff" d="M1883.843,718.816c-0.017,0-0.033,0.002-0.05,0.003l-40.24-260.521c4.132-1.284,7.134-5.139,7.134-9.694
 		c0-4.431-2.845-8.188-6.802-9.573l39.559-208.047c0.134,0.005,0.265,0.02,0.399,0.02c5.604,0,10.149-4.545,10.149-10.151
 		c0-5.479-4.346-9.934-9.775-10.131l-20.773-185.367c4.339-1.153,7.542-5.098,7.542-9.8c0-5.606-4.545-10.151-10.149-10.151
@@ -167,37 +167,26 @@
 		});
 		
 
+		$('img').animate({
+			opacity : '1',
+		},2000,'easeInQuad');
+
 		setTimeout(function(){
 
-			// show code logo
-			$('#logo-code').animate({
-				opacity : '1',
-			},1500,
-
-			// when done move and shrink img logo and hide code logo
-			function(){
-
-				$('img').animate({
-					opacity : '1',
-					left    : '560',
-					top     : '450',
-					width   : '200',
-				},600,'easeInQuad');
-
-				$('#logo-code').fadeOut(250);
-
-			}); // logo animate
+			$('img').animate({
+				left    : '560',
+				top     : '450',
+				width   : '200',
+			},600,'easeInQuad');
 
 		}, 1000);
 
+		// $('#pattern path').animate({
+		// 	opacity : '0.05',
+		// },1000,'easeInQuad');
 
-		$('#pattern path').animate({
-			opacity : '0.05',
-		},1600,'easeInQuad');
+		$('h1').hide().delay(2500).fadeIn(2000);
 
-		$('h1').hide().delay(3300).fadeIn(2000);
-
-		$('')
 
 	}); // doc ready
 
