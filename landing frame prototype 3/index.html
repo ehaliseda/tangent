@@ -2,6 +2,7 @@
 <html>
 <link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="style.css">
+<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"> -->
 
 <body class="bg-color">
 
@@ -9,7 +10,13 @@
 	<img src="mesh.svg" alt="" id="mesh">
 	<img src="mountains.svg" alt="" id="mountains">
 	<img src="logo.svg" alt="" id="logomark">
-	<img src="logotype.svg" id="logotype" alt="">
+	<img src="logotype.svg" id="logotype" alt="" style="opacity:0; left:400; height:120px; margin-top:45px; left: 539px;">
+
+	<div class="form">
+		<div class="input"></div>
+		<div class="textarea"></div>
+	</div>
+
 </div>
 
 
@@ -20,29 +27,113 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="velocity.js"></script>
+<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
 
 <script>
 
 	$(document).ready(function() {
 
-		var type = $('#logotype')
-		    .css({
-				left  : '-10px',
-				top   : '0px',
-				width : '100px'
-		    });
-		
 
-		setTimeout(function(){
+		/////////////////////////// logo show animation
+		var logoShow = function(){
+			var type = $('#logotype');
+			var mark = $('#logomark');
+			
 
-			$(type).velocity({
+			$(mark).velocity({
 				opacity : '1',
-				left    : '639',
-				top     : '300',
-			},300,'easeInCirc');
+			},1200,'easeInCirc');
 
-		}, 100);
 
+			setTimeout(function(){
+
+				$(mark).velocity({
+					left    : '800',
+					top     : '175',
+					width   : '169',
+				},400,'easeInBack');
+
+			},1000); // no delay
+
+
+			setTimeout(function(){
+
+				$(mark).velocity({
+					left    : '439',
+				},300,'easeInBack');
+
+			}, 1700);
+
+
+			setTimeout(function(){
+
+				$(type).velocity({
+					opacity : '1',
+					left    : '639',
+				},300,'easeOutQuad');
+
+
+			}, 1800);
+
+		}; //logoShow
+
+
+		//////////////////////////// hide the logo
+		var logoHide = function(){
+
+			var type   = $('#logotype'),
+			    mark   = $('#logomark'),
+			    easing = 'easeInOutQuart',
+			    time   = '700';
+
+			type.velocity({
+				opacity : '0',
+				left    : '1200px',
+			},time, easing);
+
+			mark.velocity({
+				opacity : '0',
+				left    : '0',
+			},time, easing);
+
+		}; // logoHide
+
+
+		///////////////////////////// contact show animation
+		var contactShow = function(){
+
+			var form  = $('.form'),
+			    input = $('.input'),
+			    text  = $('.textarea');
+
+
+			setTimeout(function(){
+
+				input.velocity({
+					opacity : '1',
+					top     : '37%',
+				});
+
+			},500, 'easeOutCirc');
+
+
+			setTimeout(function(){
+
+				text.velocity({
+					opacity : '1',
+					top     : '59%',
+				});
+
+			},500, 'easeOutCirc');
+
+
+		}; //contactShow
+
+		logoShow();
+		setTimeout(function(){
+			logoHide();
+			contactShow();
+		},2500);
 
 	}); // doc ready
 
