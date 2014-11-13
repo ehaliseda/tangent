@@ -1,0 +1,194 @@
+/*=========================slide-panel=========================*/
+
+.cd-panel-header span{
+	font-size: 20px;
+}
+
+/*=========================landing-animation=========================*/
+
+.land-anim-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	/*padding-bottom: 100%;*/
+	vertical-align: middle;
+	overflow: hidden;
+	height: 613px;
+	margin-top: -22px;
+}
+
+
+
+.bg-color{
+	/*background-color: #1DC0D9;*/
+	background: #ffcf59; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #ffcf59 0%, #ffc22b 70%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffcf59), color-stop(70%,#ffc22b)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #ffcf59 0%,#ffc22b 70%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #ffcf59 0%,#ffc22b 70%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #ffcf59 0%,#ffc22b 70%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #ffcf59 0%,#ffc22b 70%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf59', endColorstr='#ffc22b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+/*=========================macaw-portfolio=========================*/
+
+#logomark{
+	height: 300px;
+	position: absolute;
+	text-align: center;
+	top: 22%;
+	left: 40%;
+	opacity: 0;
+}
+
+#logotype{
+	height:230px;
+	position: absolute;
+	text-align: center;
+	top: 37%;
+	left: 48%;
+}
+
+#dots{
+	display: none;
+}
+
+
+.input{
+	position: absolute;
+	z-index: 999;
+	top: 20%;
+	left: 35%;
+	opacity: 0;
+	background-color: rgba(255,255,255,.3);
+	border-radius: 7px;
+	height: 100px;
+	width: 400px;
+	margin-bottom: 30px;
+}
+
+.textarea{
+	position: absolute;
+	z-index: 999;
+	top: 20%;
+	left: 35%;
+	opacity: 0;
+	background-color: rgba(255,255,255,.3);
+	border-radius: 7px;
+	height: 200px;
+	width: 400px;
+	margin-bottom: 30px;
+}
+
+
+
+.arrow {
+  display: block;
+  position: relative;
+  float: left;
+  z-index: 1;
+  width: 57px;
+  height: auto;
+  margin: -435px 0 0 91.76595%;
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  float: left;
+  height: auto;
+  overflow: hidden;
+}
+
+.info {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 50px;
+  margin-top: -339px;
+  background-color: rgba(255, 194, 43, 0.51);
+}
+
+.info .text {
+  width: 38.6458333333%;
+  min-height: 49px;
+  margin: 14px 0 0 36.25%;
+  color: #ffdd88;
+}
+
+.landing-frame-wrapper {
+  float: left;
+  width: 100%;
+  height: 479px;
+  background-color: #1fcbe5;
+}
+
+.mark {
+  display: block;
+  position: relative;
+  float: left;
+  clear: both;
+  width: 139px;
+  height: auto;
+  overflow: hidden;
+}
+
+.mesh {
+  display: block;
+  position: relative;
+  float: left;
+  width: 960px;
+  height: auto;
+  margin-top: -137px;
+  overflow: hidden;
+}
+
+.project-wrapper-4 {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 224px;
+  /*margin: 25px 0 0 10%;*/
+  border-radius: 7px;
+  background-color: rgba(255, 194, 43, 0.8);
+  overflow: hidden;
+}
+
+.project-wrapper-4 .info {
+  z-index: 5;
+}
+
+.project-wrapper-4 .mark {
+  z-index: 3;
+  margin: -495px 0 0 24.47266%;
+}
+
+.project-wrapper-4 .mesh {
+  z-index: 0;
+}
+
+.project-wrapper-4 .type {
+  z-index: 2;
+  margin: -464px 0 0 40.41504%;
+}
+
+.text {
+  float: left;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.type {
+  display: block;
+  position: relative;
+  float: left;
+  width: 337px;
+  height: auto;
+  overflow: hidden;
+}
+
+
